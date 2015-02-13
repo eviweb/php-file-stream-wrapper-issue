@@ -1,0 +1,5 @@
+#! /bin/bash
+#-c php.ini
+DIR=$(dirname $(readlink -f $0))
+
+php -S localhost:8000 $DIR/router.php
